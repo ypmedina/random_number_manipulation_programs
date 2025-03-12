@@ -1,0 +1,2 @@
+# Prog08: Create a program that ask user to input 10 numbers. Print how many are odd numbers.
+#Create a for function to get 10 user inputs and print how many odd numbers there are in the inputted numbers
