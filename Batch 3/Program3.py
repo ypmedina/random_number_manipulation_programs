@@ -9,6 +9,13 @@ duplicates = []
 while True:
     try:
         user_inp = int(input("Please enter a number: "))
+        numbers.append(user_inp)
+
+        for num in numbers:
+            if numbers.count(num) == 1:
+                print("This is a unique number")
+            else:
+                print("This is a duplicate")
 
     except ValueError:
         break
