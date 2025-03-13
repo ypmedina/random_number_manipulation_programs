@@ -3,8 +3,6 @@
 #For the unique and dupes, just use the same technique as the previous programs
 
 numbers = []
-unique_num = []
-duplicates = []
 while True:
     try:
         user_inp = int(input("\nPlease enter a number: "))
