@@ -5,17 +5,16 @@
 numbers = []
 unique_num = []
 duplicates = []
-
 while True:
     try:
-        user_inp = int(input("Please enter a number: "))
-        numbers.append(user_inp)
+        user_inp = int(input("\nPlease enter a number: "))
 
-        for num in numbers:
-            if numbers.count(num) == 1:
-                print("This is a unique number")
-            else:
-                print("This is a duplicate")
+        if user_inp in numbers:
+            print("This is a duplicate number")
+        else:
+            print("This is a unique number")
+            numbers.append(user_inp)
 
     except ValueError:
+        print("\nInvalid input, now exiting the program")
         break
