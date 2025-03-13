@@ -9,4 +9,5 @@ for i in range(10):
 for num in numbers:
     if numbers.count(num) != 1:
         duplicates.append(num)
-print(duplicates)
+
+print(f"{duplicates} are the numbers with duplicates")
