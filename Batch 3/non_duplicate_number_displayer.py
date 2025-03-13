@@ -6,7 +6,8 @@ for i in range(10):
     user_inp = int(input(f"Numbers entered: {i+1} "))
     numbers.append(user_inp)
 
-if numbers.count():
-    non_dupe.append(numbers)
+for j in numbers:
+    if numbers.count(j) == 1:
+        non_dupe.append(j)
 
 print(non_dupe)
