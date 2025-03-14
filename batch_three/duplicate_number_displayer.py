@@ -7,7 +7,8 @@ for i in range(10):
     numbers.append(user_inp)
 
 for num in numbers:
-    if numbers.count(num) != 1:
+    if num not in duplicates:
         duplicates.append(num)
+        print(num)
 
-print(f"{duplicates} are the numbers with duplicates")
+
