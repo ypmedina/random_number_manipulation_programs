@@ -3,12 +3,16 @@
 #using another 'for' function
 
 numbers = []
+duplicates = []
 for i in range(10):
     user_inp = int(input(f"Numbers entered {i+1}: "))
     numbers.append(user_inp)
 
+for num in numbers:
+    if numbers.count(num) > 1 and num not in duplicates:
+        duplicates.append(num)
 
-
+print(duplicates)
 
 
 
