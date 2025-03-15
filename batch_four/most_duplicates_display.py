@@ -18,7 +18,7 @@ if numbers:
         if count > max_count:
             max_count = count
             common_value = num
-    print(common_value, max_count)
+    print(f"The common value is {common_value}. It appears {max_count} times")
 
 else:
     print("none")
